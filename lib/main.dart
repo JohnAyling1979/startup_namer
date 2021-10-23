@@ -29,8 +29,6 @@ class _RandomWordsState extends State<RandomWords> {
           final int index = i ~/ 2;
 
           if (index >= _suggestions.length) {
-            print(i);
-            print(index);
             _suggestions.addAll(generateWordPairs().take(10));
           }
           return _buildRow(_suggestions[index]);
